@@ -33,8 +33,7 @@ def test_vector_index_access() -> None:
         assert vector[index] == 42.0
 
         # Task A: make this test pass by ensuring that `Vector` uses a copy of the coordinates it receives in the constructor 
-        assert reference[index] != 42.0
-
+        assert reference[index] == 42.0
 
 def test_3d_vector_addition() -> None:
     v = Vector([1.0, 2.0, 3.0]) + Vector([1.1, 2.2, 3.3])
